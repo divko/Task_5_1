@@ -8,15 +8,20 @@ namespace Task_5
 {
     internal class Program
     {
-        //static string[] SplitText(string text)
-        //{
+        static string[] SplitText(string Text)
+        {
+           
+            string[] res = Text.Split(' ');
 
-        //    return string[]; 
-        //}
+
+            return res;
+        }
+
+
         static void PrintText(String[] Arr)
         {
             foreach (var e in Arr)
-                Console.WriteLine($"{e} ");
+                Console.WriteLine($"{e}");
 
 
         }
@@ -48,13 +53,7 @@ namespace Task_5
 
             String text = Console.ReadLine();
 
-            // Передать строку, получить массив слов
-
-
-            string[] arr = { "Привет","Пока" };
-
-
-            // SplitText(text,string []);
+            string[] arr = SplitText(text);
 
             PrintText(arr);
 
